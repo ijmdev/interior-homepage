@@ -1,65 +1,177 @@
-/* body {
-    position: absolute;
-    left: 10px;
-    top: 5px;
-    background: #fcfbfd;
-  } */
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@400;700&display=swap');
 
-  .topbar p {
-    font-family: Montserrat;
-    font-style: normal;
-    font-weight: 500;
-    font-size: 18px;
-    line-height: 22px;
+html {
+    box-sizing: border-box;
   }
 
-.interior {
+body {
+    margin: 0;
+    font-family: 'Raleway', sans-serif;
+    background: #fcfbfd;
+  }
+
+h1 {
+    margin: 0;
+}
+
+
+
+#container {
+    margin-left: 4em;
+    margin-top: 2em;
+    margin-right: 4em;
+}
+
+/* Navigation Menu --> topbar */
+/* 100vw --> viewport width. zo breed als het scherm is. of vh --> viewport height, zo hoog als het scherm is */
+#topbar {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
+
+#menu {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+  }
+
+#interior {
+    border: 1px solid black;
+    padding: 1.5em;
+    color: rgb(5, 5, 5);
     text-transform: uppercase;
-    color: #080707;
-    position: absolute;
-    width: 102px;
-    height: 32px;
-    left: 77px;
-    top: 42px;
-    border: 1px solid #0f0f0f;
-    box-sizing: content-box;
+    font-size: 0.5rem;
+    letter-spacing: 3px;
+  }
+
+
+/* Navigation items */
+#list-1 {
+    font-weight: 700;
 }
 
-.home {
-    position: absolute;
-    width: 57px;
-    height: 22px;
-    left: 827px;
-    top: 46px;
+#home{
+    border-bottom: 1px solid black;
+    padding-bottom: 1em;
+}
+.list-items {
+    color: rgb(5, 4, 4);
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    text-decoration: none;
+    font-size: 0.5rem;
+    padding-top: 3em;
+    margin-left: 3em;
+  }
+  
+.list-items:hover {
+    cursor: pointer;
+    transform: scale(1.2);
+  }
+
+/* Content: text & photo div */
+#content {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 6em;
+  }
+
+
+/* Text */
+#text-items {
+    width: 25vw;
+    margin-top: 7em;
+
 }
 
-.collection {
-    position: absolute;
-width: 92px;
-height: 22px;
-left: 970px;
-top: 46px;
-}
-
-.about {
-    position: absolute;
-width: 57px;
-height: 22px;
-left: 1148px;
-top: 46px;
-}
-
-.contact {
-    position: absolute;
-width: 73px;
-height: 22px;
-left: 1291px;
-top: 46px;
-}
-
-.intro{
-    margin-top: 30vh;
-    font-weight: 500;
+.header{
+    font-weight: 700;
     font-size: 1rem;
     color: black;
   }
+
+.text {
+    font-size: 1rem;
+    color: black;
+}
+
+.extra {
+    font-size: 1rem;
+    font-weight: 700;
+    color: black;
+}
+
+/* Home interior picture */
+#interior-img {
+    max-width: 100%;
+    height: auto;
+}
+
+#designer-card {
+    width: 22em;
+    height: 8em;
+    color: white;
+    background-color: black;
+    z-index: 9;
+    margin-left: 14em;
+    margin-top: 2em;
+}
+
+.image-stack::after {
+    content: ' ';
+    display: table;
+    clear: both;
+  }
+
+.image-stack__item--top {
+      float: left;
+      width: 66%;
+      margin-right: -100%;
+      padding-top: 60%;
+      position: relative;
+      z-index: 1;
+  }
+
+/* Designer card */
+#profile-header {
+
+}
+#profile-pic {
+display: flex;
+justify-content: start;
+
+}
+
+#profile-test {
+display: flex;
+align-items: flex-start ;
+}
+
+#profile-name {
+
+}
+#profile-job-description {
+
+}
+
+
+/* Footer */
+#footer{
+    margin-top: 1em;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    text-align: center;
+}
+#created-by{
+    display: flex;
+    justify-content: center;
+    font-size: 0.6rem;
+}
+
+#designer-name{
+    font-weight: 700;
+}

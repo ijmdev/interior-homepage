@@ -1,38 +1,74 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="utf-8" />
-    <meta
-      name="viewport" content="width=device-width, initial-scale=1, maximum-scale=5"/>
 
-    <link rel="icon" href="devchallenges.png" />
-    <link rel="stylesheet" href="style.css"/>
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=5" />
+  <title>Interior Design</title>
+  <link rel="icon" href="devchallenges.png" />
+  <link rel="stylesheet" href="style.css" />
+</head>
 
-    <link
-      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500&display=swap"
-      rel="stylesheet"
-    />
-
-    <title>Interior Design</title>
-  </head>
-  <body>
-    <div class="homepage">
-      <div class="topbar">
-          <p class="interior">This interior</p>
-          <p class="home">Home</p>
-          <p class="collection">Collection</p>
-          <p class="about">About</p>
-          <p class="contact">Contact</p>
+<body>
+  <div id="container">
+    <!-- Menu Navigation / topbar -->
+    <div id="topbar">
+      <div id="interior">
+        <h2>This interior</h2>
       </div>
-      <div class="intro">
-        <h1>Modern interior</h1>
+      <div id="menu">
+        <div id="list-1" class="list-items"><span id="home">Home</span></div>
+        <div id="list-2" class="list-items">Collection</div>
+        <div id="list-3" class="list-items">About</div>
+        <div id="list-4" class="list-items">Contact</div>
+      </div>
+    </div>
+    <div id="content">
+      <div id="text-items">
+        <div class="header">
+          <h1>Modern interior</h1>
+        </div>
+        <div class="text">
+          <p>A full-Service residential & commercial interior design and staging company offering professional
+            organizing & eco-services.</p>
+        </div>
+        <div class="extra">
+          <p>Read more <span>&#8594;</span></p>
+        </div>
+      </div>
+          <div class="image-stack">
+            <div class="image-stack__item image-stack__item--top">
+              <div id="designer-card">
+                <div id="profile-header">
+                  <div id="profile-pic">
+                    <img src="/Users/isabeaudekker/Documents/projects/interior-homepage/photo2.png" alt="profile-pic-woman" width=50 height=50>
+                    <div id="profile-name"><span>Jane</span></div>
+                    <div id="profile-job-description"><span>Interior Designer</span></div>
+                  </div>
+         
+                </div>
+                <div id="profile-tag"><h4>Designed by Jane in 2021</h4></div>
+              </div>
+            </div>
+            <div class="image-stack__item image-stack__item--bottom">
+              <img id="interior-img" src="/Users/isabeaudekker/Documents/projects/interior-homepage/photo1.png"
+              alt="living room" width="600" height="450">
+            </div>
+         </div>
+    </div>
+  </div>
+  <footer>
+    <div id="footer">
+      <div id="created-by">
+        <div id="creator-tag">
+          <p>
+          <span>Created by</span><span id="designer-name">&nbsp;ijmdev&#169;</span>
+          </p>
+        </div>
+      </div>
+  </div>
 
-        <p>
-          A full-Service residential & commercial interior design and staging company offering professional 
-          organizing & eco-services.
-        </p>
-    </div>
-      <p>Read more</p>
-    </div>
-  </body>
+  </footer>
+</body>
+
 </html>
